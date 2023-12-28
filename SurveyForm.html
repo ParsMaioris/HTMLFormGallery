@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .container {
+        max-width: 700px;
+        margin: 50px auto;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        border-radius: 15px;
+      }
+      h2 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 30px;
+      }
+      .flex-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      label {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+      input[type="radio"] {
+        margin-right: 10px;
+        accent-color: #007bff;
+      }
+      select,
+      textarea,
+      input[type="submit"] {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        width: 100%;
+      }
+      textarea {
+        resize: vertical;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Customer Satisfaction Survey</h2>
+      <form>
+        <div class="flex-row">
+          <label for="satisfaction"
+            >How satisfied are you with our product?</label
+          >
+          <select id="satisfaction" name="satisfaction">
+            <option value="very_satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="unsatisfied">Unsatisfied</option>
+            <option value="very_unsatisfied">Very Unsatisfied</option>
+          </select>
+        </div>
+        <div class="flex-row">
+          <label>How often do you use our product?</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="usage" value="daily" /> Daily</label
+            >
+            <label
+              ><input type="radio" name="usage" value="weekly" /> Weekly</label
+            >
+            <label
+              ><input type="radio" name="usage" value="monthly" />
+              Monthly</label
+            >
+            <label
+              ><input type="radio" name="usage" value="rarely" /> Rarely</label
+            >
+          </div>
+        </div>
+        <div class="flex-row">
+          <label for="improvements">What improvements would you suggest?</label>
+          <textarea id="improvements" name="improvements" rows="4"></textarea>
+        </div>
+        <div class="flex-row">
+          <input type="submit" value="Submit Survey" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

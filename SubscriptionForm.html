@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        border-radius: 15px;
+      }
+      h2 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 30px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .column.full-width {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      input[type="text"],
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+      }
+      select {
+        height: 50px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: #007bff;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form>
+        <div class="row">
+          <div class="column full-width">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column full-width">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column full-width">
+            <label for="subscription">Subscription Type:</label>
+            <select id="subscription" name="subscription">
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="yearly">Yearly</option>
+            </select>
+          </div>
+        </div>
+        <input type="submit" value="Subscribe" />
+      </form>
+    </div>
+  </body>
+</html>

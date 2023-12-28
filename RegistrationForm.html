@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h2 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 30px;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f4f4f4;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        border-radius: 15px;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 100%;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 18px;
+        color: #333;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        background-color: #007bff;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      form {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h2>Registration Form</h2>
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" />
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+
+          <label for="cpassword">Confirm Password</label>
+          <input type="password" id="cpassword" name="cpassword" />
+
+          <input type="submit" value="Register" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
